@@ -17,7 +17,7 @@ h1, h3 {
 }
 
 section {
-    padding: 5vh;
+    padding: 3vh 0vh 0vh 5vh;
     font-size: small;
 }
 
@@ -45,9 +45,13 @@ button {
 }
 
 th{
-    font-size: 40px;
+    font-size: 35px;
 }
 
 td{
-    font-size: 30px;
+    font-size: 25px;
+}
+
+h2,h3{
+    font-size: 20px;
 }
