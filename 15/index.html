@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Assignment 15</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+	<header>
+		<h1>Assignment 15</h1>
+		<h3>
+			<pre>
+1. Convert Celsius to farenheight
+2. Convert Feet to inches
+3. Word Replacing
+			</pre>
+		</h3>
+	</header>
+
+	<section>
+		<h2>Celcisus to Fahrenheit or <em>reverse</em></h2>
+		<div class="item">
+			<div class="cel">
+				<h2>Celcius</h2>
+				<label for="cel"></label><input type="number" id="cel" placeholder="  &deg Celcius" step="0.2">
+			</div>
+			<div class="btn-conv">
+				<button style="border: none; background-color: transparent" id="to-cls"><i class='bx bxs-left-arrow-circle' style="scale: 3"></i></button>
+				<button style="border: none; background-color: transparent" id="to-fhr"><i class='bx bxs-right-arrow-circle' style="scale: 3"></i></button>
+			</div>
+			<div class="fhr">
+				<h2>Fahrenheit</h2>
+				<label for="fhr"></label><input type="number" id="fhr" placeholder="  &deg Fahrenheit" step="0.2">
+			</div>
+		</div>
+		<div class="error-1" style="visibility: hidden; text-align: center; color: red; margin-top: 1rem; font-size: 32px">
+			<strong>ERROR WRONG INPUT!</strong>
+		</div>
+	</section>
+
+	<section>
+		<h2>Feet to Inches</h2>
+		<div class="item">
+			<div class="ft">
+				<h2>Feet</h2>
+				<label for="ft"></label><input type="number" id="ft" placeholder="In Feet" step="0.2">
+			</div>
+			<div class="btn-conv">
+				<button style="border: none; background-color: transparent" id="to-ich"><i class='bx bxs-right-arrow-circle' style="scale: 3"></i></button>
+			</div>
+			<div class="ich">
+				<h2>Inches</h2>
+				<label for="ich"></label><input type="number" id="ich" placeholder="In Inches" step="0.2" readonly>
+			</div>
+		</div>
+		<div class="error-2" style="visibility: hidden; text-align: center; color: red; margin-top: 1rem; font-size: 32px">
+			<strong>ERROR WRONG INPUT!</strong>
+		</div>
+	</section>
+
+	<section>
+		<h2>Change the word</h2>
+		<div class="item change">
+			<div class="upper">
+				<div class="left">
+					<label for="input-text">INPUT TEXT</label>
+					<textarea id="input-text"></textarea>
+				</div>
+				<div class="right">
+					<label for="output-text">OUTPUT TEXT</label>
+					<textarea readonly id="output-text"></textarea>
+				</div>
+			</div>
+			<form class="lower" id="form">
+				<label for="from">From : <br><input type="text" id="from"> </label>
+				<label for="to">To : <br><input type="text" id="to"> </label>
+			</form>
+			<button form="form" style="border: none; background-color: transparent; margin-top: 2rem"><i class='bx bxs-right-arrow-circle' style="scale: 3"></i></button>
+		</div>
+
+		<div class="error-3" style="visibility: hidden; text-align: center; color: red; margin-top: 1rem; font-size: 32px">
+			<strong>ERROR WRONG INPUT!</strong>
+		</div>
+	</section>
+
+	<script src="main.js"></script>
+</body>
+</html>
