@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    font-family: 'Poppins', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 1s linear;
+}
+
+header {
+    text-align: center;
+    margin: 1rem;
+}
+
+.selection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    justify-content: center;
+}
+
+.box {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 30vh;
+    transition: 0.2s ease-out;
+}
+
+.box:hover {
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px;
+}
+
+.box > a {
+    text-decoration: none;
+    font-weight: 800;
+    color: black;
+}
+
+.box:nth-of-type(1) {
+    background-color: lightgreen;
+}
+
+.box:nth-of-type(2) {
+    background-color: orange;
+}
+
+.box:nth-of-type(3) {
+    background-color: steelblue;
+}
+
+.box:nth-of-type(4) {
+    background-color: hotpink;
+}
+
+form {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#signup, #login, #forgot-pass, #change-pass {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    row-gap: 1.5rem;
+    align-items: center;
+}
+
+label {
+    padding: 0 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    width: 50%;
+    border: none;
+    font-size: inherit;
+    border-bottom: 2px solid gray;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid orange;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    transition: 0.5s ease-out;
+    font-size: 20px;
+    padding: 0.5rem;
+}
+
+button:hover {
+    background-color: orange;
+
+}

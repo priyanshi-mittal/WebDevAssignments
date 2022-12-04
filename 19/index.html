@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Assignment 19</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Assignment 19</h1>
+		<h3><pre>
+Create Forms
+1. Sign UP
+2. Login
+3. Forget Password
+4. Change Password
+Use Sequence for flow of forms
+		</pre></h3>
+	</header>
+
+	<div class="selection">
+		<div class="box"><a href="#signup">Sign UP</a></div>
+		<div class="box"><a href="#login">Login</a></div>
+		<div class="box"><a href="#forgot-pass">Forgot Password</a></div>
+		<div class="box"><a href="#change-pass">Change Password</a></div>
+	</div>
+
+	<div id="signup">
+		<h2>SIGNUP FORM</h2>
+		<form id="s-form">
+			<label>Name: <input type="text" id="s-name" placeholder="name" required pattern="[a-zA-Z]{3,}"></label>
+			<label>Email: <input type="email" id="s-email" placeholder="email" required pattern="[a-z0-9._%+-]+@gmail.com"></label>
+			<label>Password: <input type="password" id="s-pass" placeholder="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"></label>
+			<label>Confirm Password: <input type="password" id="s-c-pass" placeholder="confirm password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"></label>
+			<a href="#login">Already have an account! Login</a>
+		</form>
+		<button type="submit" form="s-form">submit</button>
+		<div id="e1" style="color: red; visibility: hidden">Password doesn't match</div>
+	</div>
+
+	<div id="login">
+		<h2>LOGIN FORM</h2>
+		<form id="log">
+			<label>Email: <input type="email" id="l-email" required pattern="[a-z0-9._%+-]+@gmail.com"></label>
+			<label>Password: <input type="password" id="l-pass" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"></label>
+			<a href="#forgot-pass">forgot your password</a>
+		</form>
+		<button type="submit" form="log">submit</button>
+	</div>
+
+	<div id="forgot-pass">
+		<h2>FORGOT YOUR PASSWORD</h2>
+		<form id="f-form">
+			<label>Email: <input type="email" required pattern="[a-z0-9._%+-]+@gmail.com"></label>
+		</form>
+		<button type="submit" form="f-form">get reset link</button>
+	</div>
+
+	<div id="change-pass">
+		<h2>CHANGE PASSWORD</h2>
+		<form id="c-pass">
+			<label>Enter new password: <input type="password" id="c-pass-1" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"></label>
+			<label>Confirm password: <input type="password" id="c-pass-2" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"></label>
+		</form>
+		<button type="submit" form="c-pass">change password</button>
+		<div id="e2" style="color: red; visibility: hidden">Password doesn't match</div>
+	</div>
+
+	<script src="main.js"></script>
+</body>
+</html>
