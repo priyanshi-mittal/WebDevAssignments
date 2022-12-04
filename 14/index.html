@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Assignment 14</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Assignment 14</h1>
+		<h4>
+			<pre>
+1. Mobile Number Pattern :- Starting From 7 or 8 rest 9 digits.
+2. Email Pattern :- abc1234@gmail.com
+3. Credit Card Pattern
+4. Domain Name Pattern
+5. Search the Vowels in given string.
+6. Search the consonants in given string
+7. Count the no. of words in given String.
+8. Check Given Number is Even or Odd
+		</pre>
+		</h4>
+	</header>
+
+	<section>
+		<h2>Input Pattern Checker</h2>
+		<div class="item">
+			<form action="" id="form">
+				<div class="left">
+					<label>
+						Mobile Number : <input type="tel" placeholder="mobile-number" required pattern="[78]{1}\d{9}">
+					</label>
+					<label>
+						Email : <input type="email" placeholder="enter email" required pattern="[a-z0-9._%+-]+@gmail.com">
+					</label>
+					<label>
+						Credit Card : <input type="text" pattern="4[0-9]{12}(?:[0-9]{3})?" placeholder="credit-card-number" required>
+					</label>
+					<label>
+						Domain name : <input type="text" required pattern="(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]" placeholder="domain-name">
+					</label>
+				</div>
+				<div class="right">
+					<div class="inp-1">
+						<label>
+							Find Vowels : <input type="text" placeholder="enter-string" required onsubmit="dofunction()" id="vowel">
+						</label>
+						<div style="margin-top: 1rem" id="vowel-res"></div>
+						<div style="margin-top: 1rem" id="conso-res"></div>
+						<div style="margin-top: 1rem" id="word-count"></div>
+					</div>
+
+					<div class="inp-2">
+						<label>
+							Number (e/o) : <input type="number" placeholder="enter-number" required onsubmit="evenodd()" id="even-odd">
+						</label>
+						<div id="eo-res" style="margin-top: 1rem;"></div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="button-holder">
+			<button type="submit" form="form">submit details</button>
+		</div>
+		<div class="acc" style="font-size: 32px; font-weight: 600; text-align: center; background-color: greenyellow; margin: 2rem; visibility: hidden">DATA ACCPETED</div>
+	</section>
+
+	<script src="main.js"></script>
+</body>
+</html>
